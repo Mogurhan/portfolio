@@ -46,10 +46,9 @@ const Hero: React.FC = () => {
             <span className="greeting">Full Stack Developer</span>
             <div className="hero-subtitle">Crafting Digital Experiences</div>
             <p className="hero-description">
-              Hello! I'm a passionate Full Stack Developer with expertise in building modern web applications.
-              Based in Mogadishu, Somalia, I specialize in creating responsive, user-friendly applications 
-              using React, Node.js, PHP, and other modern technologies. With over 2 years of experience,
-              I combine clean code practices with innovative solutions to deliver exceptional digital experiences.
+              Based in Mogadishu, Somalia, I'm a passionate Full Stack Developer with expertise in building modern web applications.
+              Hello! I specialize in creating responsive, user-friendly applications using React, Node.js, PHP, and other modern technologies. 
+              With over 2 years of experience, I combine clean code practices with innovative solutions to deliver exceptional digital experiences.
             </p>
             
             <div className="hero-buttons">
@@ -57,13 +56,12 @@ const Hero: React.FC = () => {
                 View My Work
               </a>
               <a 
-                href="/resume.pdf" 
+                href="/cv.html" 
                 className="btn btn-secondary" 
-                download="Mohamud_Mohamed_Gurhan_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaDownload /> Download CV
+                <FaDownload /> View CV
               </a>
             </div>
             

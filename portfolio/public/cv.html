@@ -21,10 +21,32 @@
         }
 
         .header {
-            text-align: center;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 2rem;
+            align-items: center;
             margin-bottom: 2rem;
             border-bottom: 2px solid #4299e1;
             padding-bottom: 1rem;
+        }
+
+        .profile-image-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #4299e1;
+            box-shadow: 0 4px 6px rgba(66, 153, 225, 0.2);
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-content {
+            text-align: left;
         }
 
         .name {
@@ -41,9 +63,8 @@
 
         .contact-info {
             display: flex;
-            justify-content: center;
-            gap: 2rem;
             flex-wrap: wrap;
+            gap: 1rem 2rem;
             font-size: 0.9rem;
         }
 
@@ -125,19 +146,29 @@
             .page-break {
                 page-break-before: always;
             }
+
+            .profile-image-container {
+                border: 2px solid #4299e1;
+                box-shadow: none;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1 class="name">Mohamud Mohamed Gurhan</h1>
-        <div class="title">Full Stack Developer</div>
-        <div class="contact-info">
-            <span>📍 Mogadishu, Somalia</span>
-            <span>📧 mohamuud972@gmail.com</span>
-            <span>📱 +252 61 8008736</span>
-            <span>💻 github.com/Mogurhan</span>
-            <span>🔗 linkedin.com/in/mohamoud-gurhan-77809b224</span>
+        <div class="profile-image-container">
+            <img src="../src/assets/profile.jpg" alt="Mohamud Mohamed Gurhan" class="profile-image">
+        </div>
+        <div class="header-content">
+            <h1 class="name">Mohamud Mohamed Gurhan</h1>
+            <div class="title">Full Stack Developer</div>
+            <div class="contact-info">
+                <span>📍 Mogadishu, Somalia</span>
+                <span>📧 mohamuud972@gmail.com</span>
+                <span>📱 +252 61 8008736</span>
+                <span>💻 github.com/Mogurhan</span>
+                <span>🔗 linkedin.com/in/mohamoud-gurhan-77809b224</span>
+            </div>
         </div>
     </div>
 
