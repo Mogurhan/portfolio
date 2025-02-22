@@ -152,6 +152,41 @@
                 box-shadow: none;
             }
         }
+
+        .download-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #4299e1;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(66, 153, 225, 0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .download-button:hover {
+            transform: translateY(-2px);
+            background: #3182ce;
+            box-shadow: 0 6px 8px rgba(66, 153, 225, 0.3);
+        }
+
+        .download-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        @media print {
+            .download-button {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -307,5 +342,12 @@
             <li>English (Professional)</li>
         </ul>
     </div>
+
+    <a href="javascript:void(0)" onclick="window.print()" class="download-button">
+        <svg class="download-icon" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"></path>
+        </svg>
+        Download PDF
+    </a>
 </body>
 </html> 
