@@ -47,16 +47,22 @@ const Hero: React.FC = () => {
             <div className="hero-subtitle">Crafting Digital Experiences</div>
             <p className="hero-description">
               Hello! I'm a passionate Full Stack Developer with expertise in building modern web applications.
-              With over 2 years of experience, I specialize in creating responsive, user-friendly applications 
-              using React, Node.js, PHP, and other modern technologies. My approach combines clean code practices 
-              with innovative solutions to deliver exceptional digital experiences.
+              Based in Mogadishu, Somalia, I specialize in creating responsive, user-friendly applications 
+              using React, Node.js, PHP, and other modern technologies. With over 2 years of experience,
+              I combine clean code practices with innovative solutions to deliver exceptional digital experiences.
             </p>
             
             <div className="hero-buttons">
               <a href="#projects" className="btn btn-primary">
                 View My Work
               </a>
-              <a href="/resume.pdf" className="btn btn-secondary" download>
+              <a 
+                href="/resume.pdf" 
+                className="btn btn-secondary" 
+                download="Mohamud_Mohamed_Gurhan_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaDownload /> Download CV
               </a>
             </div>
